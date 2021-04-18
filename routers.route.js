@@ -11,8 +11,8 @@ var express = require('express')
 const router = express.Router();
 
 
-// TODO Just for client server connection.
-router.get('**', controller.createUser);
+router.post('/api/users/create', controller.createUser);
+router.get('/api/users/getAll', controller.getAll);
 
 module.exports = router;
 
