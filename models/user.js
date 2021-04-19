@@ -43,6 +43,7 @@ UserSchema.methods.comparePassword = function (plaintext, callback) {
 
 module.exports = mongoose.model("User", UserSchema);
 
+
 // TODO
 // captainUpData: {
 
