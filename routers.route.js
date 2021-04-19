@@ -12,10 +12,14 @@ const router = express.Router();
 
 
 router.post('/api/users/create', controller.createUser);
-router.get('/api/users/getAll', controller.getAll);
+router.get('/api/users/getAll', controller.getAll_NOCAPTAINUP);
+router.get('/api/users/getUserByUsername', controller.getUserByUsername);
+
+router.post('/api/files/upload', controller.uploadFile);
 
 module.exports = router;
 
+// OBSELETE
 // module.exports = function (app, express, db) {
 //     app.get('/api/trainings', async function (req, res) {
 //         await Training.find({}, (err, trainings) => {
