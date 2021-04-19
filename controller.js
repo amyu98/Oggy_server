@@ -15,7 +15,7 @@ module.exports.createUser = async function (req, res, next) {
 
     try {
         let captainupResponse = await axios.post(uri);
-        if (captainupResponse && captainupResponse.data?.data?.id) {
+        if (captainupResponse && captainupResponse.data) {
             user.captainUpId = captainupResponse.data.data.id
         } else {
             throw '';
