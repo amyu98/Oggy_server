@@ -17,6 +17,8 @@ router.get('/api/users/getUserByUsername', controller.getUserByUsername);
 
 router.post('/api/files/upload', controller.uploadFile);
 
+router.post('/api/tasks/create', controller.createTask);
+
 module.exports = router;
 
 // OBSELETE
